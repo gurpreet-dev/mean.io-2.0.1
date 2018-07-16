@@ -1,0 +1,10 @@
+
+<a class="links" [routerLink]="['/users/login']">Login</a><br><br>
+
+
+<form  [formGroup] = "form" (ngSubmit) = "save()">
+    <input type="text" name="name" placeholder="Enter name" formControlName="name"><br>
+    <input type="email" name="email" placeholder="Enter email" formControlName="email"><br>
+    <input type="password" name="password" placeholder="Enter password" formControlName="password"><br>
+    <input type="submit" value="Register">
+</form>
